@@ -8,13 +8,13 @@ let count = 0
 function increment(){
     count = count + 1
     countEl.textContent = count
-    console.log(countEl)
 }
 
 function save(){
     let countStr = count + " - "
     saveEl.textContent += countStr
-    console.log(count)
+    countEl.textContent = 0
+    count = 0
 
 }
 
